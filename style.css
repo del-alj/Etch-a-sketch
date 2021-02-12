@@ -1,0 +1,59 @@
+:root {
+    --size: 7;
+    --background: honeydew; 
+  }
+
+body {
+    background-color:honeydew;
+    font-family: monospace;
+    font-size: 50px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 50px;
+}
+
+/* button */
+.div-button {
+margin-bottom: 20px;
+}
+
+button {
+    padding: 12px;
+    border-color: black;
+    background-color: black;
+    color: honeydew;
+    border-radius: 12px;
+    border: 1px, solid, chocolate;
+    outline: none;
+}
+button:hover {
+    background-color: rgb(54, 61, 45);
+    border-color: rgb(54, 61, 45);
+}
+
+/* divs */
+#container {
+    /* background-color: chocolate; */
+    display: grid;
+    grid-template-columns: repeat(--size, 1fr);
+    grid-template-rows: repeat(--size, 1fr);
+    /* gap: 1px; */
+}
+
+.con {
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+ /* in js */
+.border {
+    border: 1px solid black;
+}
