@@ -1,6 +1,14 @@
 function changeSize(rep)
 {
+    var regex = /^[0-9]{1,2}$/;
     size = prompt("Enter new size", "");
+    let check = (String(size).match(regex));
+    while (!check)
+    {
+        alert("Enter a number from 1-64 range");
+        size = prompt("Enter new size", "");
+        check = (String(size).match(regex));
+    }
    //delete all content of container
     container.innerHTML = '';
     create(size);
